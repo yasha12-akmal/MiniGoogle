@@ -1,0 +1,50 @@
+// MiniGooglePro.rc  –  Win32 Resource Script
+#include "Resource.h"
+#include <windows.h>
+#include <commctrl.h>
+
+/////////////////////////////////////////////////////////////////////////////
+// Application Icon
+IDI_APP_ICON    ICON    "res\\app.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+// Version Information
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION    2,0,0,0
+ PRODUCTVERSION 2,0,0,0
+ FILEFLAGSMASK  0x3fL
+ FILEFLAGS      0x0L
+ FILEOS         VOS__WINDOWS32
+ FILETYPE       VFT_APP
+ FILESUBTYPE    0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "CompanyName",      "Mini Google Pro"
+            VALUE "FileDescription",  "Mini Google Pro v2.0 - Custom Search Desktop App"
+            VALUE "FileVersion",      "2.0.0.0"
+            VALUE "InternalName",     "MiniGooglePro"
+            VALUE "LegalCopyright",   "Copyright (C) 2025"
+            VALUE "OriginalFilename", "MiniGooglePro.exe"
+            VALUE "ProductName",      "Mini Google Pro"
+            VALUE "ProductVersion",   "2.0.0.0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+/////////////////////////////////////////////////////////////////////////////
+// String Table
+STRINGTABLE
+BEGIN
+    IDS_APP_TITLE   "Mini Google Pro v2.0"
+    IDS_PLACEHOLDER "Enter search query..."
+    IDS_SEARCHING   "Scanning secure servers..."
+    IDS_NO_RESULTS  "No matches found."
+    IDS_API_ERROR   "API Response Error."
+END
